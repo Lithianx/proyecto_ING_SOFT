@@ -1,0 +1,78 @@
+{% extends "aplicacion/base.html" %}
+{% load static %}
+
+
+{% block title %}servicios{% endblock %}
+
+{% block contenido %}
+
+
+
+    <div class="container mt-5">
+        <h1>Servicios en Hoteles VERANUM</h1>
+        <p>Descubre los diversos servicios que ofrecemos en Hoteles VERANUM para hacer de tu estadía una experiencia inolvidable. Desde relajantes spas hasta gimnasios completamente equipados, tenemos todo lo que necesitas para disfrutar al máximo.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/gym1.jpg' %}" class="card-img-top img-fluid" alt="Gimnasio" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Gimnasio</h5>
+                        <p class="card-text">Mantente en forma durante tu estadía con nuestro gimnasio completamente equipado y abierto las 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/piscina1.jpeg' %}" class="card-img-top img-fluid" alt="Piscina" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Piscina</h5>
+                        <p class="card-text">Disfruta de nuestra piscina climatizada, ideal para relajarte después de un día de actividades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/spa1.png' %}" class="card-img-top img-fluid" alt="Spa" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Spa</h5>
+                        <p class="card-text">Relájate y rejuvenece con nuestros tratamientos de spa, diseñados para tu bienestar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/restaurante1.jpg' %}" class="card-img-top img-fluid" alt="Restaurante" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurante</h5>
+                        <p class="card-text">Saborea la mejor gastronomía en nuestro restaurante, con una variedad de platos locales e internacionales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/servicioHabitacion1.jpeg' %}" class="card-img-top img-fluid" alt="Servicio a la habitación" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio a la habitación</h5>
+                        <p class="card-text">Disfruta de la comodidad de nuestro servicio a la habitación, disponible las 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/lavanderia1.jpg' %}" class="card-img-top img-fluid" alt="Lavandería" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Lavandería</h5>
+                        <p class="card-text">Aprovecha nuestro servicio de lavandería y tintorería para mantener tu ropa impecable durante tu estancia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% comment %} <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> {% endcomment %}
+
+    <link rel="stylesheet" href="aplicacion/css/servicios.css">
+
+    {% endblock %}

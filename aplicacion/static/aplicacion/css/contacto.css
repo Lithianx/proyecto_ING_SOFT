@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.animated-header, .animated-paragraph, .animated-item {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}

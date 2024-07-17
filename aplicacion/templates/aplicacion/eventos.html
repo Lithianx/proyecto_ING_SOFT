@@ -1,0 +1,45 @@
+{% extends "aplicacion/base.html" %}
+{% load static %}
+
+
+{% block title %}eventos{% endblock %}
+
+{% block contenido %}
+
+    <div class="container mt-5">
+        <h1>Eventos en Hoteles VERANUM</h1>
+        <p>Te invitamos a conocer los mejores salones y tipos de eventos que ofrecemos en Hoteles VERANUM. Desde bodas y conferencias hasta reuniones corporativas, nuestros salones están equipados con todas las comodidades necesarias para hacer de tu evento un éxito.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/boda1.jpg' %}" class="card-img-top" alt="Salón de Bodas">
+                    <div class="card-body">
+                        <h5 class="card-title">Salón de Bodas</h5>
+                        <p class="card-text">Celebra el día más importante de tu vida en nuestro elegante salón de bodas, con capacidad para 200 invitados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/conferencia1.jpg' %}" class="card-img-top" alt="Sala de Conferencias">
+                    <div class="card-body">
+                        <h5 class="card-title">Sala de Conferencias</h5>
+                        <p class="card-text">Equipado con la última tecnología, nuestro salón de conferencias es perfecto para reuniones y presentaciones corporativas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{% static 'aplicacion/img/corporativo1.jpg' %}" class="card-img-top" alt="Eventos Corporativos">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos Corporativos</h5>
+                        <p class="card-text">Organiza tus eventos corporativos en un entorno profesional y moderno. Perfecto para lanzamientos de productos y reuniones anuales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}

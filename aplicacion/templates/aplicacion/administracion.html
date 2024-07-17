@@ -1,0 +1,47 @@
+{% extends "aplicacion/base.html" %}
+{% load static %}
+
+
+{% block title %}admin{% endblock %}
+
+{% block contenido %}
+
+<div class="container mt-4">
+    <h2>Reservas de Eventos</h2>
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Hotel</th>
+                <th>Cliente</th>
+                <th>Tipo de Evento</th>
+                <th>Descripción</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Fin</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reserva in reservas %}
+            <tr>
+                <td>{{ reserva.id }}</td>
+                <td>{{ reserva.hotel }}</td>
+                <td>{{ reserva.user }}</td>
+                <td>{{ reserva.tipo_evento }}</td>
+                <td>{{ reserva.descripcion }}</td>
+                <td>{{ reserva.fecha_inicio }}</td>
+                <td>{{ reserva.fecha_fin }}</td>
+                <td>
+                    <a href="{% url 'eliminar_reserva' reserva.id %}" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+                <td>
+                    <a href="{% url 'editar_reserva' reserva.id %}" class="btn btn-sm btn-warning">Editar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

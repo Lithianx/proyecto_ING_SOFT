@@ -1,0 +1,21 @@
+{% extends "aplicacion/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+{% block title %}registrarse{% endblock %}
+
+{% block contenido %}
+
+
+
+<div class="container mt-5">
+    <h2>Registrarse</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary mt-3">Registrarse</button>
+    </form>
+</div>
+{% endblock %}
