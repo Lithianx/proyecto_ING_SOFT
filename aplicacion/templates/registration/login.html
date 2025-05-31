@@ -16,7 +16,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form|crispy}}
-        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+        <button type="submit" class="btn btn-success">Iniciar Sesion</button>
         <button type= "button" class="btn btn-success"> <a href="{% url 'registrarse' %}" class="text-white text-decoration-none">Registrarse</a> 
     </form>
 </div>
